@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import { AppHeader } from "@/components/header";
 import { AppFooter } from "@/components/footer";
@@ -52,26 +53,35 @@ export default function Home() {
       <AppHeader />
       <main className="flex-1">
         {/* Hero Section */}
-        <section id="hero" className="relative h-[60vh] md:h-[80vh] w-full">
+        <section id="hero" className="relative h-[70vh] md:h-[90vh] w-full group">
           <Image
             src={heroImage.imageUrl}
             alt={heroImage.description}
             fill
-            className="object-cover"
+            className="object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
             priority
             data-ai-hint={heroImage.imageHint}
           />
-          <div className="absolute inset-0 bg-primary/40" />
+          <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-primary/30 to-transparent" />
           <div className="relative h-full flex flex-col items-center justify-center text-center text-primary-foreground p-4">
-            <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-bold drop-shadow-lg">
-              Selamat Datang di Masjid Baiturahman
+            <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight drop-shadow-2xl">
+              Masjid Baiturahman
             </h1>
-            <p className="mt-4 max-w-2xl text-lg md:text-xl drop-shadow">
-              Pusat Ibadah, Pendidikan, dan Komunitas Islam yang Damai dan Terbuka.
+            <p className="mt-6 max-w-3xl text-lg md:text-2xl drop-shadow-xl font-body">
+              Menyemai Iman, Merajut Ukhuwah, Membangun Peradaban.
             </p>
-            <Button asChild className="mt-8 bg-accent hover:bg-accent/90 text-accent-foreground" size="lg">
-              <a href="#tentang">Pelajari Lebih Lanjut</a>
-            </Button>
+            <div className="mt-10 flex flex-wrap justify-center gap-4">
+                <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+                    <a href="#kegiatan">
+                        Lihat Kegiatan
+                    </a>
+                </Button>
+                <Button asChild size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary bg-transparent">
+                    <a href="#jadwal-sholat">
+                        Jadwal Sholat
+                    </a>
+                </Button>
+            </div>
           </div>
         </section>
 
