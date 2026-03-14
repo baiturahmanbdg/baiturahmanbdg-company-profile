@@ -1,3 +1,40 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero",
+      "description": "A beautiful interior of a mosque with intricate designs.",
+      "imageUrl": "https://picsum.photos/seed/hero-mosque/1920/1080",
+      "imageHint": "mosque interior"
+    },
+    {
+      "id": "about-us-pattern",
+      "description": "An elegant Islamic geometric pattern.",
+      "imageUrl": "https://picsum.photos/seed/islamic-pattern/600/800",
+      "imageHint": "islamic pattern"
+    },
+    {
+      "id": "event-1",
+      "description": "A community gathering at the mosque.",
+      "imageUrl": "https://picsum.photos/seed/event-1/600/400",
+      "imageHint": "community gathering"
+    },
+    {
+      "id": "event-2",
+      "description": "A scholar giving a lecture to an audience.",
+      "imageUrl": "https://picsum.photos/seed/event-2/600/400",
+      "imageHint": "lecture"
+    },
+    {
+      "id": "event-3",
+      "description": "Children learning in a mosque class.",
+      "imageUrl": "https://picsum.photos/seed/event-3/600/400",
+      "imageHint": "children activity"
+    },
+    {
+      "id": "map",
+      "description": "A map showing the location of the mosque.",
+      "imageUrl": "https://picsum.photos/seed/map-location/800/600",
+      "imageHint": "map location"
+    }
+  ]
 }
